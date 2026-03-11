@@ -26,10 +26,10 @@ export default function Navbar({ locale }: { locale: string }) {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
             <div className="w-9 h-9 bg-gradient-to-br from-green-500 to-green-700 rounded-xl flex items-center justify-center">
-              <span className="text-white font-bold text-lg">M</span>
+              <span className="text-white font-bold text-lg">D</span>
             </div>
             <span className="font-bold text-xl text-green-700 dark:text-green-400 hidden sm:block">
-              Mano Verde
+              Déliko
             </span>
           </Link>
 

@@ -1,6 +1,6 @@
 {
   "common": {
-    "appName": "Mano Verde",
+    "appName": "Déliko",
     "tagline": "Gastronomia Premium Entregue em sua Casa",
     "search": "Buscar",
     "loading": "Carregando...",
@@ -202,8 +202,8 @@
     "settings": "Configurações do restaurante"
   },
   "footer": {
-    "about": "Sobre Mano Verde",
-    "aboutDesc": "Plataforma de entrega de gastronomia premium, conectando os melhores restaurantes com amantes da boa culinária.",
+    "about": "Sobre Déliko",
+    "aboutDesc": "Plataforma de entrega de gastronomia premium, conectando os melhores restaurantes com amantes da boa culinária através de Déliko.",
     "quickLinks": "Links rápidos",
     "legal": "Aviso legal",
     "privacy": "Política de privacidade",
@@ -214,7 +214,27 @@
     "partnerWith": "Torne-se um parceiro",
     "careers": "Carreiras",
     "followUs": "Siga-nos",
-    "copyright": "© 2026 Mano Verde Inc SA. Todos os direitos reservados.",
-    "madeWith": "Feito com amor em Camarões"
+    "copyright": "© 2026 Déliko by Mano Verde Inc SA. Todos os direitos reservados.",
+    "madeWith": "Feito com amor em Camarões",
+    "contactEmail": "infos@manovende.com",
+    "contactPhone": "+237 651 982 878"
+  },
+  "legal": {
+    "termsTitle": "Termos e Condições",
+    "termsContent": "Os termos e condições de Déliko regem o acesso e uso de nossa plataforma premium de entrega de gastronomia.",
+    "privacyTitle": "Política de Privacidade",
+    "privacyContent": "Déliko se compromete a proteger seus dados pessoais e privacidade de acordo com as regulamentações aplicáveis.",
+    "cookiesTitle": "Política de Cookies",
+    "cookiesContent": "Usamos cookies para melhorar sua experiência de usuário na plataforma Déliko."
+  },
+  "dashboard": {
+    "welcome": "Bem-vindo a Déliko",
+    "customerDashTitle": "Espaço do Cliente",
+    "restaurantDashTitle": "Espaço do Restaurante",
+    "courierDashTitle": "Espaço do Entregador",
+    "recentOrders": "Pedidos Recentes",
+    "quickActions": "Ações Rápidas",
+    "stats": "Estatísticas",
+    "noData": "Nenhum dado disponível no momento"
   }
 }

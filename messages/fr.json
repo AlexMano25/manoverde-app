@@ -1,6 +1,6 @@
 {
   "common": {
-    "appName": "Mano Verde",
+    "appName": "Déliko",
     "tagline": "Gastronomie Premium Livrée Chez Vous",
     "search": "Rechercher",
     "loading": "Chargement...",
@@ -202,8 +202,8 @@
     "settings": "Paramètres du restaurant"
   },
   "footer": {
-    "about": "À propos de Mano Verde",
-    "aboutDesc": "Plateforme de livraison gastronomique premium, connectant les meilleurs restaurants aux amateurs de bonne cuisine.",
+    "about": "À propos de Déliko",
+    "aboutDesc": "Plateforme de livraison gastronomique premium, connectant les meilleurs restaurants aux amateurs de bonne cuisine via Déliko.",
     "quickLinks": "Liens rapides",
     "legal": "Mentions légales",
     "privacy": "Politique de confidentialité",
@@ -214,7 +214,27 @@
     "partnerWith": "Devenir partenaire",
     "careers": "Carrières",
     "followUs": "Suivez-nous",
-    "copyright": "© 2026 Mano Verde Inc SA. Tous droits réservés.",
-    "madeWith": "Fait avec amour au Cameroun"
+    "copyright": "© 2026 Déliko by Mano Verde Inc SA. Tous droits réservés.",
+    "madeWith": "Fait avec amour au Cameroun",
+    "contactEmail": "infos@manovende.com",
+    "contactPhone": "+237 651 982 878"
+  },
+  "legal": {
+    "termsTitle": "Conditions Générales d'Utilisation",
+    "termsContent": "Les conditions générales d'utilisation de Déliko régissent l'accès et l'utilisation de notre plateforme de livraison gastronomique.",
+    "privacyTitle": "Politique de Confidentialité",
+    "privacyContent": "Déliko s'engage à protéger vos données personnelles et votre vie privée conformément à la réglementation applicable.",
+    "cookiesTitle": "Politique de Cookies",
+    "cookiesContent": "Nous utilisons des cookies pour améliorer votre expérience utilisateur sur la plateforme Déliko."
+  },
+  "dashboard": {
+    "welcome": "Bienvenue sur Déliko",
+    "customerDashTitle": "Espace Client",
+    "restaurantDashTitle": "Espace Restaurant",
+    "courierDashTitle": "Espace Livreur",
+    "recentOrders": "Commandes récentes",
+    "quickActions": "Actions rapides",
+    "stats": "Statistiques",
+    "noData": "Aucune donnée pour le moment"
   }
 }

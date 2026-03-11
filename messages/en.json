@@ -1,6 +1,6 @@
 {
   "common": {
-    "appName": "Mano Verde",
+    "appName": "Déliko",
     "tagline": "Premium Gastronomy Delivered to You",
     "search": "Search",
     "loading": "Loading...",
@@ -202,8 +202,8 @@
     "settings": "Restaurant settings"
   },
   "footer": {
-    "about": "About Mano Verde",
-    "aboutDesc": "Premium food delivery platform connecting the best restaurants with food enthusiasts.",
+    "about": "About Déliko",
+    "aboutDesc": "Premium food delivery platform connecting the best restaurants with food enthusiasts via Déliko.",
     "quickLinks": "Quick links",
     "legal": "Legal notice",
     "privacy": "Privacy policy",
@@ -214,7 +214,27 @@
     "partnerWith": "Become a partner",
     "careers": "Careers",
     "followUs": "Follow us",
-    "copyright": "© 2026 Mano Verde Inc SA. All rights reserved.",
-    "madeWith": "Made with love in Cameroon"
+    "copyright": "© 2026 Déliko by Mano Verde Inc SA. All rights reserved.",
+    "madeWith": "Made with love in Cameroon",
+    "contactEmail": "infos@manovende.com",
+    "contactPhone": "+237 651 982 878"
+  },
+  "legal": {
+    "termsTitle": "Terms and Conditions",
+    "termsContent": "The terms and conditions of Déliko govern access to and use of our premium food delivery platform.",
+    "privacyTitle": "Privacy Policy",
+    "privacyContent": "Déliko is committed to protecting your personal data and privacy in accordance with applicable regulations.",
+    "cookiesTitle": "Cookie Policy",
+    "cookiesContent": "We use cookies to improve your user experience on the Déliko platform."
+  },
+  "dashboard": {
+    "welcome": "Welcome to Déliko",
+    "customerDashTitle": "Customer Space",
+    "restaurantDashTitle": "Restaurant Space",
+    "courierDashTitle": "Delivery Driver Space",
+    "recentOrders": "Recent Orders",
+    "quickActions": "Quick Actions",
+    "stats": "Statistics",
+    "noData": "No data available at this time"
   }
 }

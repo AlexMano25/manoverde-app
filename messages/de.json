@@ -1,6 +1,6 @@
 {
   "common": {
-    "appName": "Mano Verde",
+    "appName": "Déliko",
     "tagline": "Premium-Gastronomie direkt zu Ihnen nach Hause",
     "search": "Suchen",
     "loading": "Wird geladen...",
@@ -202,8 +202,8 @@
     "settings": "Restaurant-Einstellungen"
   },
   "footer": {
-    "about": "Über Mano Verde",
-    "aboutDesc": "Premium-Lieferplattform für Gourmetgerichte, die beste Restaurants mit Feinschmeckern verbindet.",
+    "about": "Über Déliko",
+    "aboutDesc": "Premium-Lieferplattform für Gourmetgerichte, die beste Restaurants mit Feinschmeckern über Déliko verbindet.",
     "quickLinks": "Schnelllinks",
     "legal": "Rechtliche Hinweise",
     "privacy": "Datenschutzrichtlinie",
@@ -214,7 +214,27 @@
     "partnerWith": "Partner werden",
     "careers": "Karrieren",
     "followUs": "Folgen Sie uns",
-    "copyright": "© 2026 Mano Verde Inc SA. Alle Rechte vorbehalten.",
-    "madeWith": "Mit Liebe in Kamerun gemacht"
+    "copyright": "© 2026 Déliko by Mano Verde Inc SA. Alle Rechte vorbehalten.",
+    "madeWith": "Mit Liebe in Kamerun gemacht",
+    "contactEmail": "infos@manovende.com",
+    "contactPhone": "+237 651 982 878"
+  },
+  "legal": {
+    "termsTitle": "Allgemeine Geschäftsbedingungen",
+    "termsContent": "Die Allgemeinen Geschäftsbedingungen von Déliko regeln den Zugang zu und die Nutzung unserer Premium-Lieferplattform.",
+    "privacyTitle": "Datenschutzrichtlinie",
+    "privacyContent": "Déliko verpflichtet sich, Ihre persönlichen Daten und Privatsphäre gemäß geltender Vorschriften zu schützen.",
+    "cookiesTitle": "Cookie-Richtlinie",
+    "cookiesContent": "Wir verwenden Cookies, um Ihr Benutzererlebnis auf der Déliko-Plattform zu verbessern."
+  },
+  "dashboard": {
+    "welcome": "Willkommen bei Déliko",
+    "customerDashTitle": "Kundenbereich",
+    "restaurantDashTitle": "Restaurantbereich",
+    "courierDashTitle": "Fahrerbereich",
+    "recentOrders": "Aktuelle Bestellungen",
+    "quickActions": "Schnellaktionen",
+    "stats": "Statistiken",
+    "noData": "Aktuell keine Daten verfügbar"
   }
 }

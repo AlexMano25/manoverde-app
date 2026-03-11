@@ -6,13 +6,13 @@ import { locales, type Locale, isRtl } from '@/i18n/config';
 import '../globals.css';
 
 export const metadata: Metadata = {
-  title: 'Mano Verde - Gastronomie Premium Livrée',
-  description: 'Plateforme de livraison gastronomique 3-5 étoiles au Cameroun',
+  title: 'Déliko - Gastronomie Premium Livrée',
+  description: 'Plateforme de livraison gastronomique 3-5 étoiles au Cameroun. Par Mano Verde Inc SA.',
   manifest: '/manifest.json',
   appleWebApp: {
     capable: true,
     statusBarStyle: 'default',
-    title: 'Mano Verde',
+    title: 'Déliko',
   },
 };
 

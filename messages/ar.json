@@ -1,6 +1,6 @@
 {
   "common": {
-    "appName": "Mano Verde",
+    "appName": "Déliko",
     "tagline": "الطعام الفاخر يُسلم إلى باب منزلك",
     "search": "بحث",
     "loading": "جاري التحميل...",
@@ -202,8 +202,8 @@
     "settings": "إعدادات المطعم"
   },
   "footer": {
-    "about": "حول Mano Verde",
-    "aboutDesc": "منصة توصيل طعام فاخرة تربط أفضل المطاعم مع عشاق الطعام الجيد.",
+    "about": "حول Déliko",
+    "aboutDesc": "منصة توصيل طعام فاخرة تربط أفضل المطاعم مع عشاق الطعام الجيد عبر Déliko.",
     "quickLinks": "روابط سريعة",
     "legal": "الإخطار القانوني",
     "privacy": "سياسة الخصوصية",
@@ -214,7 +214,27 @@
     "partnerWith": "أصبح شريك",
     "careers": "الوظائف",
     "followUs": "تابعنا",
-    "copyright": "© 2026 Mano Verde Inc SA. جميع الحقوق محفوظة.",
-    "madeWith": "صُنع بحب في الكاميرون"
+    "copyright": "© 2026 Déliko by Mano Verde Inc SA. جميع الحقوق محفوظة.",
+    "madeWith": "صُنع بحب في الكاميرون",
+    "contactEmail": "infos@manovende.com",
+    "contactPhone": "+237 651 982 878"
+  },
+  "legal": {
+    "termsTitle": "الشروط والأحكام",
+    "termsContent": "تحكم شروط وأحكام Déliko الوصول واستخدام منصة توصيل الطعام الفاخرة الخاصة بنا.",
+    "privacyTitle": "سياسة الخصوصية",
+    "privacyContent": "تلتزم Déliko بحماية بيانتك الشخصية وخصوصيتك وفقاً للوائح المعمول بها.",
+    "cookiesTitle": "سياسة ملفات تعريف الارتباط",
+    "cookiesContent": "نستخدم ملفات تعريف الارتباط لتحسين تجربتك على منصة Déliko."
+  },
+  "dashboard": {
+    "welcome": "مرحباً بك في Déliko",
+    "customerDashTitle": "مساحة العميل",
+    "restaurantDashTitle": "مساحة المطعم",
+    "courierDashTitle": "مساحة المندوب",
+    "recentOrders": "الطلبات الأخيرة",
+    "quickActions": "إجراءات سريعة",
+    "stats": "الإحصائيات",
+    "noData": "لا توجد بيانات في الوقت الحالي"
   }
 }
