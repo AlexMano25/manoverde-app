@@ -162,7 +162,15 @@
     "vehicleCar": "Auto",
     "termsAgree": "Accetto i termini e le condizioni",
     "otpSent": "Un codice è stato inviato al tuo numero",
-    "enterOtp": "Inserisci il codice ricevuto"
+    "enterOtp": "Inserisci il codice ricevuto",
+    "rememberMe": "Ricordami",
+    "loginError": "Email o password non valide",
+    "forgotDesc": "Inserisci la tua email e ti invieremo un link per reimpostare la password",
+    "sendResetLink": "Invia Link di Reimpostazione",
+    "resetSent": "Email inviata!",
+    "resetSentDesc": "Controlla la tua posta in arrivo per il link di reimpostazione della password.",
+    "resetError": "Errore nell'invio. Controlla la tua email e riprova.",
+    "backToLogin": "Torna al login"
   },
   "profile": {
     "title": "Il Mio Profilo",
@@ -507,15 +515,19 @@
       "status": "Status",
       "active": "Active",
       "inactive": "Inactive",
-      "loading": "Loading",
-      "noData": "No data available",
+      "loading": "Caricamento...",
+      "noData": "Nessun dato disponibile",
       "view": "View",
       "suspend": "Suspend",
       "resume": "Resume",
       "createdAt": "Created",
       "updatedAt": "Updated",
       "admin": "Admin",
-      "superAdmin": "Super Admin"
+      "superAdmin": "Super Admin",
+      "accessDenied": "Accesso negato",
+      "adminOnly": "Questa pagina è riservata solo agli amministratori.",
+      "login": "Accedi",
+      "logout": "Esci"
     },
     "dashboard": {
       "title": "Dashboard",

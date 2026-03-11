@@ -162,7 +162,15 @@
     "vehicleCar": "Auto",
     "termsAgree": "Ich akzeptiere die Allgemeinen Geschäftsbedingungen",
     "otpSent": "Ein Code wurde an Ihre Nummer gesendet",
-    "enterOtp": "Geben Sie den erhaltenen Code ein"
+    "enterOtp": "Geben Sie den erhaltenen Code ein",
+    "rememberMe": "Merken Sie sich mich",
+    "loginError": "Ungültige E-Mail oder Passwort",
+    "forgotDesc": "Geben Sie Ihre E-Mail ein und wir senden Ihnen einen Link zum Zurücksetzen des Passworts",
+    "sendResetLink": "Passwort-Zurücksetzen-Link senden",
+    "resetSent": "E-Mail gesendet!",
+    "resetSentDesc": "Überprüfen Sie Ihren Posteingang auf den Link zum Zurücksetzen des Passworts.",
+    "resetError": "Fehler beim Senden. Überprüfen Sie Ihre E-Mail und versuchen Sie es erneut.",
+    "backToLogin": "Zurück zum Anmelden"
   },
   "profile": {
     "title": "Mein Profil",
@@ -507,15 +515,19 @@
       "status": "Status",
       "active": "Active",
       "inactive": "Inactive",
-      "loading": "Loading",
-      "noData": "No data available",
+      "loading": "Wird geladen...",
+      "noData": "Keine Daten verfügbar",
       "view": "View",
       "suspend": "Suspend",
       "resume": "Resume",
       "createdAt": "Created",
       "updatedAt": "Updated",
       "admin": "Admin",
-      "superAdmin": "Super Admin"
+      "superAdmin": "Super Admin",
+      "accessDenied": "Zugriff verweigert",
+      "adminOnly": "Diese Seite ist nur für Administratoren bestimmt.",
+      "login": "Anmelden",
+      "logout": "Abmelden"
     },
     "dashboard": {
       "title": "Dashboard",

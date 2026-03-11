@@ -162,7 +162,15 @@
     "vehicleCar": "Car",
     "termsAgree": "I agree to the terms and conditions",
     "otpSent": "A code has been sent to your number",
-    "enterOtp": "Enter the code you received"
+    "enterOtp": "Enter the code you received",
+    "rememberMe": "Remember me",
+    "loginError": "Invalid email or password",
+    "forgotDesc": "Enter your email and we'll send you a password reset link",
+    "sendResetLink": "Send Reset Link",
+    "resetSent": "Email sent!",
+    "resetSentDesc": "Check your inbox for the password reset link.",
+    "resetError": "Error sending email. Please check your email and try again.",
+    "backToLogin": "Back to login"
   },
   "profile": {
     "title": "My Profile",
@@ -507,7 +515,7 @@
       "status": "Status",
       "active": "Active",
       "inactive": "Inactive",
-      "loading": "Loading",
+      "loading": "Loading...",
       "noData": "No data available",
       "view": "View",
       "suspend": "Suspend",
@@ -515,7 +523,11 @@
       "createdAt": "Created",
       "updatedAt": "Updated",
       "admin": "Admin",
-      "superAdmin": "Super Admin"
+      "superAdmin": "Super Admin",
+      "accessDenied": "Access Denied",
+      "adminOnly": "This page is for administrators only.",
+      "login": "Login",
+      "logout": "Logout"
     },
     "dashboard": {
       "title": "Dashboard",
