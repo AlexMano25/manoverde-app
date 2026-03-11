@@ -38,10 +38,10 @@ function RestaurantDashboardContent({ locale }: { locale: string }) {
           <div className="flex items-center justify-between mb-6">
             <div>
               <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-2">
-                Restaurant Dashboard
+                {t('dashboard.restaurant.title')}
               </h1>
               <p className="text-gray-600 dark:text-gray-400">
-                Manage your restaurant and orders efficiently
+                {t('dashboard.restaurant.subtitle')}
               </p>
             </div>
             <button className="relative p-3 bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-700 hover:border-green-200 dark:hover:border-green-800 transition-colors">
@@ -54,9 +54,9 @@ function RestaurantDashboardContent({ locale }: { locale: string }) {
           <div className="bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-800 rounded-xl p-4 flex items-start gap-3">
             <AlertCircle className="w-5 h-5 text-yellow-600 dark:text-yellow-500 flex-shrink-0 mt-0.5" />
             <div>
-              <h3 className="font-semibold text-yellow-900 dark:text-yellow-200 mb-1">New Order Alert!</h3>
+              <h3 className="font-semibold text-yellow-900 dark:text-yellow-200 mb-1">{t('restaurant.newOrder')}</h3>
               <p className="text-sm text-yellow-800 dark:text-yellow-300">
-                You have 2 new pending orders. Accept or reject them to keep customers happy.
+                {t('dashboard.restaurant.alertDesc')}
               </p>
             </div>
           </div>
@@ -92,7 +92,7 @@ function RestaurantDashboardContent({ locale }: { locale: string }) {
           <div className="lg:col-span-2">
             <div className="flex items-center justify-between mb-6">
               <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
-                Today's Orders
+                {t('restaurant.todayOrders')}
               </h2>
               <span className="px-3 py-1 bg-red-50 dark:bg-red-900/20 text-red-600 dark:text-red-400 text-sm font-medium rounded-full">
                 {todayOrders.length} orders
@@ -131,21 +131,21 @@ function RestaurantDashboardContent({ locale }: { locale: string }) {
                     {order.status === 'Pending' && (
                       <div className="flex gap-2">
                         <button className="px-4 py-2 bg-green-600 text-white text-sm font-medium rounded-lg hover:bg-green-700 transition-colors">
-                          Accept
+                          {t('restaurant.acceptOrder')}
                         </button>
                         <button className="px-4 py-2 bg-red-50 dark:bg-red-900/20 text-red-600 dark:text-red-400 text-sm font-medium rounded-lg hover:bg-red-100 dark:hover:bg-red-900/30 transition-colors">
-                          Reject
+                          {t('restaurant.rejectOrder')}
                         </button>
                       </div>
                     )}
                     {order.status === 'Ready' && (
                       <button className="px-4 py-2 bg-green-50 dark:bg-green-900/20 text-green-600 dark:text-green-400 text-sm font-medium rounded-lg hover:bg-green-100 dark:hover:bg-green-900/30 transition-colors">
-                        Pickup Ready
+                        {t('dashboard.restaurant.pickupReady')}
                       </button>
                     )}
                     {order.status === 'Preparing' && (
                       <button className="px-4 py-2 bg-green-600 text-white text-sm font-medium rounded-lg hover:bg-green-700 transition-colors">
-                        Mark Ready
+                        {t('restaurant.markReady')}
                       </button>
                     )}
                   </div>
@@ -157,7 +157,7 @@ function RestaurantDashboardContent({ locale }: { locale: string }) {
           {/* Quick Actions */}
           <div>
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
-              Quick Actions
+              {t('dashboard.restaurant.quickActions')}
             </h2>
 
             <div className="space-y-4">
@@ -167,8 +167,8 @@ function RestaurantDashboardContent({ locale }: { locale: string }) {
               >
                 <div className="flex items-center justify-between">
                   <div>
-                    <h3 className="font-semibold mb-1">Menu Management</h3>
-                    <p className="text-xs text-green-100">Edit dishes & prices</p>
+                    <h3 className="font-semibold mb-1">{t('restaurant.menuManagement')}</h3>
+                    <p className="text-xs text-green-100">{t('dashboard.restaurant.editDishes')}</p>
                   </div>
                   <Menu className="w-6 h-6 opacity-50 group-hover:opacity-100 transition-opacity" />
                 </div>
@@ -180,8 +180,8 @@ function RestaurantDashboardContent({ locale }: { locale: string }) {
               >
                 <div className="flex items-center justify-between">
                   <div>
-                    <h3 className="font-semibold mb-1">Analytics</h3>
-                    <p className="text-xs text-blue-100">View sales data</p>
+                    <h3 className="font-semibold mb-1">{t('restaurant.analytics')}</h3>
+                    <p className="text-xs text-blue-100">{t('dashboard.restaurant.viewSales')}</p>
                   </div>
                   <BarChart3 className="w-6 h-6 opacity-50 group-hover:opacity-100 transition-opacity" />
                 </div>
@@ -193,8 +193,8 @@ function RestaurantDashboardContent({ locale }: { locale: string }) {
               >
                 <div className="flex items-center justify-between">
                   <div>
-                    <h3 className="font-semibold mb-1">Settings</h3>
-                    <p className="text-xs text-purple-100">Restaurant info</p>
+                    <h3 className="font-semibold mb-1">{t('nav.settings')}</h3>
+                    <p className="text-xs text-purple-100">{t('dashboard.restaurant.restaurantInfo')}</p>
                   </div>
                   <CheckCircle className="w-6 h-6 opacity-50 group-hover:opacity-100 transition-opacity" />
                 </div>
@@ -203,22 +203,22 @@ function RestaurantDashboardContent({ locale }: { locale: string }) {
 
             {/* Today Summary */}
             <div className="mt-8 bg-white dark:bg-gray-900 rounded-xl p-6 border border-gray-200 dark:border-gray-700">
-              <h3 className="font-semibold text-gray-900 dark:text-white mb-4">Today's Summary</h3>
+              <h3 className="font-semibold text-gray-900 dark:text-white mb-4">{t('dashboard.restaurant.todaySummary')}</h3>
               <div className="space-y-3 text-sm">
                 <div className="flex justify-between">
-                  <span className="text-gray-600 dark:text-gray-400">Orders Completed</span>
+                  <span className="text-gray-600 dark:text-gray-400">{t('dashboard.restaurant.ordersCompleted')}</span>
                   <span className="font-semibold text-gray-900 dark:text-white">18</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-gray-600 dark:text-gray-400">Avg Rating</span>
+                  <span className="text-gray-600 dark:text-gray-400">{t('dashboard.restaurant.avgRating')}</span>
                   <span className="font-semibold text-gray-900 dark:text-white">4.8/5.0</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-gray-600 dark:text-gray-400">Revenue</span>
+                  <span className="text-gray-600 dark:text-gray-400">{t('restaurant.revenue')}</span>
                   <span className="font-semibold text-green-600">425,000 XAF</span>
                 </div>
                 <div className="flex justify-between pt-3 border-t border-gray-100 dark:border-gray-800">
-                  <span className="text-gray-600 dark:text-gray-400">Commission (5%)</span>
+                  <span className="text-gray-600 dark:text-gray-400">{t('dashboard.restaurant.commission')}</span>
                   <span className="font-semibold text-gray-900 dark:text-white">21,250 XAF</span>
                 </div>
               </div>
@@ -229,12 +229,12 @@ function RestaurantDashboardContent({ locale }: { locale: string }) {
         {/* Performance Chart Placeholder */}
         <div className="bg-white dark:bg-gray-900 rounded-2xl p-8 border border-gray-200 dark:border-gray-700">
           <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
-            Weekly Performance
+            {t('dashboard.restaurant.weeklyPerformance')}
           </h2>
           <div className="h-64 bg-gray-50 dark:bg-gray-800 rounded-xl flex items-center justify-center">
             <div className="text-center text-gray-500 dark:text-gray-400">
               <BarChart3 className="w-12 h-12 mx-auto mb-3 opacity-30" />
-              <p>Chart visualization will be displayed here</p>
+              <p>{t('dashboard.restaurant.chartPlaceholder')}</p>
             </div>
           </div>
         </div>

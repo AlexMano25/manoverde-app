@@ -13,7 +13,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
 }
 
 function AboutContent({ locale }: { locale: string }) {
-  const t = useTranslations();
+  const t = useTranslations('about');
 
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-950">
@@ -25,10 +25,10 @@ function AboutContent({ locale }: { locale: string }) {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="max-w-2xl">
             <h1 className="text-5xl sm:text-6xl font-extrabold leading-tight tracking-tight mb-6">
-              About Mano Verde
+              {t('title')}
             </h1>
             <p className="text-xl text-green-100 leading-relaxed">
-              Connecting food lovers with the best restaurants in their cities, delivering exceptional culinary experiences to your doorstep.
+              {t('subtitle')}
             </p>
           </div>
         </div>
@@ -42,16 +42,13 @@ function AboutContent({ locale }: { locale: string }) {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-6">
-                Our Story
+                {t('story')}
               </h2>
               <p className="text-gray-600 dark:text-gray-400 text-lg leading-relaxed mb-4">
-                Mano Verde started with a simple vision: to make premium gastronomy accessible to everyone. Founded in Yaoundé, Cameroon, we recognized a gap in the food delivery market - customers wanted quality, restaurants wanted growth, and delivery partners wanted opportunity.
+                {t('storyParagraph1')}
               </p>
               <p className="text-gray-600 dark:text-gray-400 text-lg leading-relaxed mb-4">
-                Today, we're proud to connect food enthusiasts with the finest 3 and 5-star restaurants across 8 cities in Cameroon. We've facilitated thousands of orders, partnered with hundreds of restaurants, and empowered hundreds of delivery drivers to earn a sustainable income.
-              </p>
-              <p className="text-gray-600 dark:text-gray-400 text-lg leading-relaxed">
-                But we're just getting started. Our mission continues to evolve as we expand to new cities and improve our platform to serve all our stakeholders better.
+                {t('storyParagraph2')}
               </p>
             </div>
             <div className="bg-gradient-to-br from-green-100 to-emerald-100 dark:from-green-900/20 dark:to-emerald-900/20 rounded-2xl h-96 flex items-center justify-center">
@@ -63,7 +60,7 @@ function AboutContent({ locale }: { locale: string }) {
         {/* Mission & Vision */}
         <section className="mb-20">
           <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-12 text-center">
-            Our Values
+            {t('values')}
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
             {/* Mission */}
@@ -72,13 +69,10 @@ function AboutContent({ locale }: { locale: string }) {
                 <Target className="w-8 h-8 text-green-600" />
               </div>
               <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-                Our Mission
+                {t('missionTitle')}
               </h3>
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
-                To deliver excellence in food and service by connecting customers with premium restaurants, supporting entrepreneurs, and creating economic opportunities for our delivery partners.
-              </p>
-              <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                We believe that everyone deserves access to quality food, prepared with passion and delivered with care.
+                {t('missionDesc')}
               </p>
             </div>
 
@@ -88,13 +82,10 @@ function AboutContent({ locale }: { locale: string }) {
                 <Zap className="w-8 h-8 text-blue-600" />
               </div>
               <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-                Our Vision
+                {t('visionTitle')}
               </h3>
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
-                To become the most trusted and efficient food delivery platform across Africa, known for supporting small businesses and building sustainable livelihoods.
-              </p>
-              <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                We envision a future where technology brings communities closer through great food.
+                {t('visionDesc')}
               </p>
             </div>
           </div>
@@ -103,24 +94,25 @@ function AboutContent({ locale }: { locale: string }) {
         {/* Core Values */}
         <section className="mb-20">
           <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-12 text-center">
-            Core Values
+            {t('coreValues')}
           </h2>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-4 gap-8">
             {[
               {
                 icon: Heart,
-                title: 'Customer First',
-                description: 'Every decision we make prioritizes the satisfaction and experience of our customers.'
+                key: 'excellence'
+              },
+              {
+                icon: Truck,
+                key: 'fastDelivery'
               },
               {
                 icon: Users,
-                title: 'Community',
-                description: 'We support local restaurants and empower delivery partners to build their own businesses.'
+                key: 'localCommunity'
               },
               {
-                icon: Award,
-                title: 'Excellence',
-                description: 'We maintain the highest standards of quality, service, and reliability.'
+                icon: Zap,
+                key: 'innovation'
               }
             ].map((value, idx) => {
               const Icon = value.icon;
@@ -130,10 +122,10 @@ function AboutContent({ locale }: { locale: string }) {
                     <Icon className="w-8 h-8 text-green-600" />
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
-                    {value.title}
+                    {t(`value${idx === 0 ? 'Excellence' : idx === 1 ? 'FastDelivery' : idx === 2 ? 'LocalCommunity' : 'Innovation'}Title`)}
                   </h3>
                   <p className="text-gray-600 dark:text-gray-400">
-                    {value.description}
+                    {t(`value${idx === 0 ? 'Excellence' : idx === 1 ? 'FastDelivery' : idx === 2 ? 'LocalCommunity' : 'Innovation'}Desc`)}
                   </p>
                 </div>
               );
@@ -144,14 +136,14 @@ function AboutContent({ locale }: { locale: string }) {
         {/* By The Numbers */}
         <section className="mb-20 bg-green-50 dark:bg-green-900/10 rounded-3xl p-12">
           <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-12 text-center">
-            By The Numbers
+            {t('byNumbers')}
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
-              { value: '50+', label: 'Restaurants' },
-              { value: '8', label: 'Cities' },
-              { value: '100+', label: 'Delivery Partners' },
-              { value: '10K+', label: 'Happy Customers' }
+              { value: '50+', label: t('restaurants') },
+              { value: '8', label: t('cities') },
+              { value: '100+', label: t('deliveryPartners') },
+              { value: '10K+', label: t('happyCustomers') }
             ].map((stat, idx) => (
               <div key={idx} className="text-center">
                 <div className="text-4xl font-extrabold text-green-600 mb-2">
@@ -168,15 +160,15 @@ function AboutContent({ locale }: { locale: string }) {
         {/* Our Team */}
         <section className="mb-20">
           <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-12 text-center">
-            Our Team
+            {t('ourTeam')}
           </h2>
           <div className="bg-white dark:bg-gray-900 rounded-2xl p-12 border border-gray-200 dark:border-gray-700 text-center">
             <Users className="w-16 h-16 text-green-600 mx-auto mb-6 opacity-50" />
             <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-              Passionate About Food & Service
+              {t('teamSubtitle')}
             </h3>
             <p className="text-gray-600 dark:text-gray-400 text-lg leading-relaxed max-w-2xl mx-auto">
-              Our diverse team brings together technology experts, food enthusiasts, logistics professionals, and customer service specialists. We're united by a passion for excellence and a commitment to building something meaningful.
+              {t('teamDesc')}
             </p>
           </div>
         </section>
@@ -184,31 +176,38 @@ function AboutContent({ locale }: { locale: string }) {
         {/* Cities & Expansion */}
         <section className="mb-20">
           <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-12 text-center">
-            Where We Operate
+            {t('whereWeOperate')}
           </h2>
           <div className="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
             <div className="bg-white dark:bg-gray-900 rounded-xl p-6 border border-gray-200 dark:border-gray-700">
-              <h3 className="font-semibold text-gray-900 dark:text-white mb-4">Now Available</h3>
+              <h3 className="font-semibold text-gray-900 dark:text-white mb-4">{t('nowAvailable')}</h3>
               <ul className="space-y-2">
-                {['Yaoundé', 'Douala', 'Bafoussam', 'Bamenda', 'Buea', 'Kumba', 'Bertoua', 'Garoua'].map((city) => (
-                  <li key={city} className="flex items-center gap-2 text-gray-600 dark:text-gray-400">
+                {[
+                  { name: 'Yaoundé', key: 'yaonde' },
+                  { name: 'Douala', key: 'douala' },
+                  { name: 'Bafoussam', key: 'bafoussam' },
+                  { name: 'Bamenda', key: 'bamenda' },
+                  { name: 'Buea', key: 'buea' },
+                  { name: 'Kumba', key: 'kumba' }
+                ].map((city) => (
+                  <li key={city.key} className="flex items-center gap-2 text-gray-600 dark:text-gray-400">
                     <MapPin className="w-4 h-4 text-green-600" />
-                    {city}
+                    {city.name}
                   </li>
                 ))}
               </ul>
             </div>
 
             <div className="bg-white dark:bg-gray-900 rounded-xl p-6 border border-gray-200 dark:border-gray-700">
-              <h3 className="font-semibold text-gray-900 dark:text-white mb-4">Coming Soon</h3>
+              <h3 className="font-semibold text-gray-900 dark:text-white mb-4">{t('comingSoon')}</h3>
               <p className="text-gray-600 dark:text-gray-400 mb-4">
-                We're rapidly expanding across Cameroon and planning to reach other African cities in 2026.
+                {t('expansionDesc')}
               </p>
               <Link
                 href="/contact"
                 className="inline-flex items-center gap-2 text-green-600 hover:text-green-700 font-medium"
               >
-                Request Service in Your City
+                {t('requestService')}
                 <ChevronRight className="w-4 h-4" />
               </Link>
             </div>
@@ -218,24 +217,24 @@ function AboutContent({ locale }: { locale: string }) {
         {/* CTA Section */}
         <section className="bg-gradient-to-r from-green-600 to-emerald-700 rounded-3xl p-12 text-white text-center">
           <h2 className="text-3xl font-bold mb-4">
-            Join the Mano Verde Community
+            {t('ctaTitle')}
           </h2>
           <p className="text-green-100 text-lg mb-8 max-w-2xl mx-auto">
-            Whether you're a customer hungry for great food, a restaurant ready to grow, or a delivery partner looking for opportunity - there's a place for you at Mano Verde.
+            {t('ctaDesc')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/auth/register"
               className="inline-flex items-center justify-center px-8 py-4 bg-white text-green-700 font-semibold rounded-xl hover:bg-green-50 transition-colors"
             >
-              Get Started Today
+              {t('getStarted')}
               <ChevronRight className="w-5 h-5 ml-2" />
             </Link>
             <Link
               href="/contact"
               className="inline-flex items-center justify-center px-8 py-4 bg-green-500/30 text-white font-semibold rounded-xl hover:bg-green-500/40 transition-colors border border-white/20"
             >
-              Contact Us
+              {t('contactUs')}
             </Link>
           </div>
         </section>

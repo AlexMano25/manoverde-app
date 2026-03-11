@@ -30,9 +30,9 @@ function RegisterContent({ locale }: { locale: string }) {
   });
 
   const roles = [
-    { role: 'customer', icon: Users, label: t('auth.asCustomer'), color: 'green', desc: 'Commander des plats premium' },
-    { role: 'restaurant', icon: UtensilsCrossed, label: t('auth.asRestaurant'), color: 'blue', desc: 'Vendre sur Déliko' },
-    { role: 'courier', icon: Truck, label: t('auth.asCourier'), color: 'orange', desc: 'Livrer et gagner' },
+    { role: 'customer', icon: Users, label: t('auth.asCustomer'), color: 'green', desc: t('auth.customerDesc') },
+    { role: 'restaurant', icon: UtensilsCrossed, label: t('auth.asRestaurant'), color: 'blue', desc: t('auth.restaurantDesc') },
+    { role: 'courier', icon: Truck, label: t('auth.asCourier'), color: 'orange', desc: t('auth.courierDesc') },
   ];
 
   const cities = [
@@ -55,7 +55,7 @@ function RegisterContent({ locale }: { locale: string }) {
               <span className="text-white font-bold text-2xl">D</span>
             </div>
             <h1 className="text-2xl font-bold">{t('auth.registerTitle')}</h1>
-            <p className="text-sm text-gray-500 mt-1">Rejoignez Déliko aujourd&apos;hui</p>
+            <p className="text-sm text-gray-500 mt-1">{t('auth.registerSubtitle')}</p>
           </div>
 
           <div className="bg-white dark:bg-gray-900 rounded-2xl p-8 shadow-sm border border-gray-100 dark:border-gray-800">
@@ -147,7 +147,7 @@ function RegisterContent({ locale }: { locale: string }) {
               {/* Restaurant-specific fields */}
               {selectedRole === 'restaurant' && (
                 <div>
-                  <label className="block text-sm font-medium mb-2">Nom du restaurant</label>
+                  <label className="block text-sm font-medium mb-2">{t('auth.restaurantName')}</label>
                   <div className="relative">
                     <Building2 className="absolute start-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
                     <input
@@ -164,7 +164,7 @@ function RegisterContent({ locale }: { locale: string }) {
               {/* Courier-specific fields */}
               {selectedRole === 'courier' && (
                 <div>
-                  <label className="block text-sm font-medium mb-2">Type de véhicule</label>
+                  <label className="block text-sm font-medium mb-2">{t('auth.vehicleType')}</label>
                   <div className="grid grid-cols-3 gap-2">
                     {['moto', 'velo', 'voiture'].map(type => (
                       <button
@@ -177,7 +177,7 @@ function RegisterContent({ locale }: { locale: string }) {
                             : 'border-gray-200 text-gray-500 hover:border-gray-300'
                         }`}
                       >
-                        {type === 'moto' ? '🏍️ Moto' : type === 'velo' ? '🚲 Vélo' : '🚗 Voiture'}
+                        {type === 'moto' ? '🏍️ ' + t('auth.vehicleMotorcycle') : type === 'velo' ? '🚲 ' + t('auth.vehicleBicycle') : '🚗 ' + t('auth.vehicleCar')}
                       </button>
                     ))}
                   </div>

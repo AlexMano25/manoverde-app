@@ -62,18 +62,18 @@ function CourierDashboardContent({ locale }: { locale: string }) {
           <div className="flex items-center justify-between mb-6">
             <div>
               <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-2">
-                Delivery Dashboard
+                {t('dashboard.courier.title')}
               </h1>
               <p className="text-gray-600 dark:text-gray-400">
-                Manage your deliveries and earnings
+                {t('dashboard.courier.subtitle')}
               </p>
             </div>
 
             {/* Status Toggle */}
             <div className="flex items-center gap-3">
               <div className="text-right">
-                <p className="text-sm text-gray-600 dark:text-gray-400 mb-1">Your Status</p>
-                <p className="text-lg font-bold text-green-600">Available</p>
+                <p className="text-sm text-gray-600 dark:text-gray-400 mb-1">{t('dashboard.courier.yourStatus')}</p>
+                <p className="text-lg font-bold text-green-600">{t('courier.available')}</p>
               </div>
               <button className="p-4 bg-green-600 hover:bg-green-700 text-white rounded-xl transition-colors">
                 <Activity className="w-6 h-6" />
@@ -90,9 +90,9 @@ function CourierDashboardContent({ locale }: { locale: string }) {
           <div className="bg-white dark:bg-gray-900 rounded-2xl p-6 border border-gray-200 dark:border-gray-700">
             <div className="flex items-center justify-between">
               <div>
-                <p className="text-sm text-gray-600 dark:text-gray-400 mb-1">Today's Earnings</p>
+                <p className="text-sm text-gray-600 dark:text-gray-400 mb-1">{t('courier.todayEarnings')}</p>
                 <p className="text-3xl font-bold text-green-600">24,500 XAF</p>
-                <p className="text-xs text-gray-500 dark:text-gray-500 mt-2">6 deliveries</p>
+                <p className="text-xs text-gray-500 dark:text-gray-500 mt-2">{t('dashboard.courier.deliveriesCount')}</p>
               </div>
               <DollarSign className="w-12 h-12 text-green-100 dark:text-green-900/30 bg-green-50 dark:bg-green-900/10 rounded-xl p-3" />
             </div>
@@ -101,9 +101,9 @@ function CourierDashboardContent({ locale }: { locale: string }) {
           <div className="bg-white dark:bg-gray-900 rounded-2xl p-6 border border-gray-200 dark:border-gray-700">
             <div className="flex items-center justify-between">
               <div>
-                <p className="text-sm text-gray-600 dark:text-gray-400 mb-1">Distance Covered</p>
+                <p className="text-sm text-gray-600 dark:text-gray-400 mb-1">{t('dashboard.courier.distanceCovered')}</p>
                 <p className="text-3xl font-bold text-gray-900 dark:text-white">15.8 km</p>
-                <p className="text-xs text-gray-500 dark:text-gray-500 mt-2">Total today</p>
+                <p className="text-xs text-gray-500 dark:text-gray-500 mt-2">{t('dashboard.courier.totalToday')}</p>
               </div>
               <MapPin className="w-12 h-12 text-blue-100 dark:text-blue-900/30 bg-blue-50 dark:bg-blue-900/10 rounded-xl p-3" />
             </div>
@@ -112,9 +112,9 @@ function CourierDashboardContent({ locale }: { locale: string }) {
           <div className="bg-white dark:bg-gray-900 rounded-2xl p-6 border border-gray-200 dark:border-gray-700">
             <div className="flex items-center justify-between">
               <div>
-                <p className="text-sm text-gray-600 dark:text-gray-400 mb-1">Deliveries Completed</p>
+                <p className="text-sm text-gray-600 dark:text-gray-400 mb-1">{t('courier.deliveriesCompleted')}</p>
                 <p className="text-3xl font-bold text-gray-900 dark:text-white">156</p>
-                <p className="text-xs text-gray-500 dark:text-gray-500 mt-2">This month</p>
+                <p className="text-xs text-gray-500 dark:text-gray-500 mt-2">{t('dashboard.courier.thisMonth')}</p>
               </div>
               <CheckCircle className="w-12 h-12 text-purple-100 dark:text-purple-900/30 bg-purple-50 dark:bg-purple-900/10 rounded-xl p-3" />
             </div>
@@ -123,9 +123,9 @@ function CourierDashboardContent({ locale }: { locale: string }) {
           <div className="bg-white dark:bg-gray-900 rounded-2xl p-6 border border-gray-200 dark:border-gray-700">
             <div className="flex items-center justify-between">
               <div>
-                <p className="text-sm text-gray-600 dark:text-gray-400 mb-1">Commission Rate</p>
+                <p className="text-sm text-gray-600 dark:text-gray-400 mb-1">{t('courier.commission')}</p>
                 <p className="text-3xl font-bold text-gray-900 dark:text-white">12%</p>
-                <p className="text-xs text-gray-500 dark:text-gray-500 mt-2">Per delivery</p>
+                <p className="text-xs text-gray-500 dark:text-gray-500 mt-2">{t('dashboard.courier.perDelivery')}</p>
               </div>
               <Truck className="w-12 h-12 text-orange-100 dark:text-orange-900/30 bg-orange-50 dark:bg-orange-900/10 rounded-xl p-3" />
             </div>
@@ -137,7 +137,7 @@ function CourierDashboardContent({ locale }: { locale: string }) {
           {/* Available Deliveries */}
           <div className="lg:col-span-2">
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
-              Available Deliveries
+              {t('courier.availableOrders')}
             </h2>
 
             <div className="space-y-4">
@@ -174,7 +174,7 @@ function CourierDashboardContent({ locale }: { locale: string }) {
                         </div>
                         <button className="w-32 px-4 py-2.5 bg-green-600 text-white font-semibold rounded-lg hover:bg-green-700 transition-colors flex items-center justify-center gap-2">
                           <Navigation className="w-4 h-4" />
-                          Accept
+                          {t('courier.acceptDelivery')}
                         </button>
                       </div>
                     </div>
@@ -185,39 +185,39 @@ function CourierDashboardContent({ locale }: { locale: string }) {
 
             {/* Load More */}
             <button className="w-full mt-6 py-3 border border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-300 font-medium rounded-xl hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
-              Load More Deliveries
+              {t('dashboard.courier.loadMore')}
             </button>
           </div>
 
           {/* Quick Actions & Info */}
           <div>
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
-              Quick Info
+              {t('dashboard.courier.quickInfo')}
             </h2>
 
             <div className="space-y-4 mb-6">
               <div className="bg-gradient-to-br from-green-600 to-emerald-700 rounded-xl p-6 text-white">
-                <h3 className="font-semibold mb-2">Total Earnings This Month</h3>
+                <h3 className="font-semibold mb-2">{t('dashboard.courier.monthlyEarnings')}</h3>
                 <p className="text-3xl font-bold mb-1">385,000 XAF</p>
-                <p className="text-green-100 text-sm">Including commission</p>
+                <p className="text-green-100 text-sm">{t('dashboard.courier.includingCommission')}</p>
               </div>
 
               <div className="bg-gradient-to-br from-blue-600 to-blue-700 rounded-xl p-6 text-white">
-                <h3 className="font-semibold mb-2">Your Rating</h3>
+                <h3 className="font-semibold mb-2">{t('dashboard.courier.yourRating')}</h3>
                 <p className="text-3xl font-bold mb-1">4.9 / 5.0</p>
-                <p className="text-blue-100 text-sm">Based on 156 deliveries</p>
+                <p className="text-blue-100 text-sm">{t('dashboard.courier.basedOnDeliveries')}</p>
               </div>
             </div>
 
             {/* Current Delivery (if any) */}
             <div className="bg-white dark:bg-gray-900 rounded-xl p-6 border border-gray-200 dark:border-gray-700">
               <h3 className="font-semibold text-gray-900 dark:text-white mb-4">
-                Current Delivery
+                {t('dashboard.courier.currentDelivery')}
               </h3>
               <div className="text-center py-6">
                 <Truck className="w-12 h-12 text-gray-400 mx-auto mb-3 opacity-50" />
                 <p className="text-gray-600 dark:text-gray-400">
-                  No active delivery. Accept one to start earning!
+                  {t('dashboard.courier.noActiveDelivery')}
                 </p>
               </div>
             </div>
@@ -228,10 +228,10 @@ function CourierDashboardContent({ locale }: { locale: string }) {
         <div>
           <div className="flex items-center justify-between mb-6">
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
-              Today's Delivery History
+              {t('dashboard.courier.deliveryHistory')}
             </h2>
             <button className="text-green-600 hover:text-green-700 font-medium text-sm flex items-center gap-1">
-              View All
+              {t('common.seeAll')}
               <ChevronRight className="w-4 h-4" />
             </button>
           </div>
@@ -241,12 +241,12 @@ function CourierDashboardContent({ locale }: { locale: string }) {
               <table className="w-full">
                 <thead className="bg-gray-50 dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700">
                   <tr>
-                    <th className="px-6 py-3 text-left text-sm font-semibold text-gray-900 dark:text-white">Delivery ID</th>
-                    <th className="px-6 py-3 text-left text-sm font-semibold text-gray-900 dark:text-white">Customer</th>
-                    <th className="px-6 py-3 text-left text-sm font-semibold text-gray-900 dark:text-white">Distance</th>
-                    <th className="px-6 py-3 text-left text-sm font-semibold text-gray-900 dark:text-white">Earnings</th>
-                    <th className="px-6 py-3 text-left text-sm font-semibold text-gray-900 dark:text-white">Time</th>
-                    <th className="px-6 py-3 text-left text-sm font-semibold text-gray-900 dark:text-white">Status</th>
+                    <th className="px-6 py-3 text-left text-sm font-semibold text-gray-900 dark:text-white">{t('dashboard.courier.deliveryId')}</th>
+                    <th className="px-6 py-3 text-left text-sm font-semibold text-gray-900 dark:text-white">{t('dashboard.courier.customer')}</th>
+                    <th className="px-6 py-3 text-left text-sm font-semibold text-gray-900 dark:text-white">{t('restaurants.deliveryTime')}</th>
+                    <th className="px-6 py-3 text-left text-sm font-semibold text-gray-900 dark:text-white">{t('courier.earnings')}</th>
+                    <th className="px-6 py-3 text-left text-sm font-semibold text-gray-900 dark:text-white">{t('dashboard.courier.time')}</th>
+                    <th className="px-6 py-3 text-left text-sm font-semibold text-gray-900 dark:text-white">{t('orders.status')}</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-gray-200 dark:divide-gray-700">

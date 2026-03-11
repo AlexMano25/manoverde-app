@@ -36,10 +36,10 @@ function CustomerDashboardContent({ locale }: { locale: string }) {
         {/* Welcome Section */}
         <div className="mb-12">
           <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-2">
-            Welcome Back, Ahmed!
+            {t('dashboard.customer.welcome')}
           </h1>
           <p className="text-gray-600 dark:text-gray-400">
-            Ready to discover your next favorite meal?
+            {t('dashboard.customer.subtitle')}
           </p>
         </div>
 
@@ -48,7 +48,7 @@ function CustomerDashboardContent({ locale }: { locale: string }) {
           <div className="bg-white dark:bg-gray-900 rounded-2xl p-6 shadow-sm border border-gray-200 dark:border-gray-700">
             <div className="flex items-center justify-between">
               <div>
-                <p className="text-sm text-gray-600 dark:text-gray-400 mb-1">Total Orders</p>
+                <p className="text-sm text-gray-600 dark:text-gray-400 mb-1">{t('dashboard.customer.totalOrders')}</p>
                 <p className="text-3xl font-bold text-gray-900 dark:text-white">24</p>
               </div>
               <ShoppingBag className="w-12 h-12 text-green-100 dark:text-green-900/30 bg-green-50 dark:bg-green-900/10 rounded-xl p-3" />
@@ -58,7 +58,7 @@ function CustomerDashboardContent({ locale }: { locale: string }) {
           <div className="bg-white dark:bg-gray-900 rounded-2xl p-6 shadow-sm border border-gray-200 dark:border-gray-700">
             <div className="flex items-center justify-between">
               <div>
-                <p className="text-sm text-gray-600 dark:text-gray-400 mb-1">Loyalty Points</p>
+                <p className="text-sm text-gray-600 dark:text-gray-400 mb-1">{t('dashboard.customer.loyaltyPoints')}</p>
                 <p className="text-3xl font-bold text-green-600">1,250</p>
               </div>
               <Star className="w-12 h-12 text-yellow-100 dark:text-yellow-900/30 bg-yellow-50 dark:bg-yellow-900/10 rounded-xl p-3 fill-yellow-400" />
@@ -68,7 +68,7 @@ function CustomerDashboardContent({ locale }: { locale: string }) {
           <div className="bg-white dark:bg-gray-900 rounded-2xl p-6 shadow-sm border border-gray-200 dark:border-gray-700">
             <div className="flex items-center justify-between">
               <div>
-                <p className="text-sm text-gray-600 dark:text-gray-400 mb-1">Favorite Restaurants</p>
+                <p className="text-sm text-gray-600 dark:text-gray-400 mb-1">{t('dashboard.customer.favoriteRestaurants')}</p>
                 <p className="text-3xl font-bold text-gray-900 dark:text-white">8</p>
               </div>
               <Heart className="w-12 h-12 text-red-100 dark:text-red-900/30 bg-red-50 dark:bg-red-900/10 rounded-xl p-3 fill-red-400" />
@@ -79,7 +79,7 @@ function CustomerDashboardContent({ locale }: { locale: string }) {
         {/* Quick Actions */}
         <div className="mb-12">
           <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
-            Quick Actions
+            {t('dashboard.customer.quickActions')}
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             <Link
@@ -88,8 +88,8 @@ function CustomerDashboardContent({ locale }: { locale: string }) {
             >
               <div className="flex items-center justify-between">
                 <div>
-                  <h3 className="font-semibold text-lg mb-1">Browse Restaurants</h3>
-                  <p className="text-green-100 text-sm">Explore all available restaurants</p>
+                  <h3 className="font-semibold text-lg mb-1">{t('dashboard.customer.browseRestaurants')}</h3>
+                  <p className="text-green-100 text-sm">{t('dashboard.customer.exploreRestaurants')}</p>
                 </div>
                 <UtensilsCrossed className="w-8 h-8 opacity-30 group-hover:opacity-50 transition-opacity" />
               </div>
@@ -101,8 +101,8 @@ function CustomerDashboardContent({ locale }: { locale: string }) {
             >
               <div className="flex items-center justify-between">
                 <div>
-                  <h3 className="font-semibold text-lg mb-1">My Orders</h3>
-                  <p className="text-blue-100 text-sm">View active and past orders</p>
+                  <h3 className="font-semibold text-lg mb-1">{t('dashboard.customer.myOrders')}</h3>
+                  <p className="text-blue-100 text-sm">{t('dashboard.customer.viewOrders')}</p>
                 </div>
                 <ShoppingBag className="w-8 h-8 opacity-30 group-hover:opacity-50 transition-opacity" />
               </div>
@@ -114,8 +114,8 @@ function CustomerDashboardContent({ locale }: { locale: string }) {
             >
               <div className="flex items-center justify-between">
                 <div>
-                  <h3 className="font-semibold text-lg mb-1">Manage Addresses</h3>
-                  <p className="text-purple-100 text-sm">Update delivery locations</p>
+                  <h3 className="font-semibold text-lg mb-1">{t('dashboard.customer.manageAddresses')}</h3>
+                  <p className="text-purple-100 text-sm">{t('dashboard.customer.updateAddresses')}</p>
                 </div>
                 <MapPin className="w-8 h-8 opacity-30 group-hover:opacity-50 transition-opacity" />
               </div>
@@ -127,7 +127,7 @@ function CustomerDashboardContent({ locale }: { locale: string }) {
         <div className="mb-12">
           <div className="flex items-center justify-between mb-6">
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
-              Recent Orders
+              {t('dashboard.customer.recentOrders')}
             </h2>
             <Link
               href="/orders"
@@ -164,7 +164,7 @@ function CustomerDashboardContent({ locale }: { locale: string }) {
                       {order.amount}
                     </p>
                     <button className="text-green-600 hover:text-green-700 text-sm font-medium mt-1">
-                      Reorder
+                      {t('orders.reorder')}
                     </button>
                   </div>
                 </div>
@@ -177,7 +177,7 @@ function CustomerDashboardContent({ locale }: { locale: string }) {
         <div>
           <div className="flex items-center justify-between mb-6">
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
-              Your Favorite Restaurants
+              {t('dashboard.customer.favoriteRestaurantsList')}
             </h2>
             <button className="text-green-600 hover:text-green-700 font-medium text-sm flex items-center gap-1">
               {t('common.seeAll')}
@@ -209,7 +209,7 @@ function CustomerDashboardContent({ locale }: { locale: string }) {
                     </span>
                   </div>
                   <button className="w-full py-2.5 bg-green-50 dark:bg-green-900/20 text-green-600 dark:text-green-400 font-semibold rounded-lg hover:bg-green-100 dark:hover:bg-green-900/30 transition-colors">
-                    Browse Menu
+                    {t('restaurants.seeMenu')}
                   </button>
                 </div>
               </div>
@@ -219,7 +219,7 @@ function CustomerDashboardContent({ locale }: { locale: string }) {
             <button className="bg-white dark:bg-gray-900 rounded-2xl overflow-hidden border border-gray-200 dark:border-gray-700 hover:border-green-200 dark:hover:border-green-800 transition-all group flex items-center justify-center h-80">
               <div className="text-center">
                 <Plus className="w-12 h-12 text-gray-400 mx-auto mb-2 group-hover:text-green-600 transition-colors" />
-                <p className="text-gray-600 dark:text-gray-400 font-medium">Add More Favorites</p>
+                <p className="text-gray-600 dark:text-gray-400 font-medium">{t('dashboard.customer.addMoreFavorites')}</p>
               </div>
             </button>
           </div>
